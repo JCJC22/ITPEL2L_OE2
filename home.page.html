@@ -1,0 +1,84 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/1.png" alt="app-logo" />
+      <ion-card-subtitle> </ion-card-subtitle>
+      <ion-card-title id="title"> Welcome To My App </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <form #form="ngForm">
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div id="txt">
+          <h3>Create your account!</h3>
+        </div>
+        <div id="bg">
+          <ion-item>
+            <ion-input
+              name="name"
+              type="text"
+              placeholder="Firstame"
+              ngModel
+              required
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input
+              name="name"
+              type="text"
+              placeholder="Lastname"
+              ngModel
+              required
+            ></ion-input>
+          </ion-item>
+          <ion-list>
+            <ion-radio-group>
+              <ion-label>Gender</ion-label>
+              <ion-item>
+                <ion-label>Male</ion-label>
+                <ion-radio value="Male"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Female</ion-label>
+                <ion-radio value="Female"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+          <ion-item>
+            <ion-input
+              name="email"
+              type="email"
+              placeholder="your@email.com"
+              ngModel
+              required
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input
+              name="cnum"
+              type="text"
+              placeholder="Contact #"
+              ngModel
+              required
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input
+              name="add"
+              type="text"
+              placeholder="Address"
+              ngModel
+              required
+            ></ion-input>
+          </ion-item>
+        </div>
+        <div padding>
+          <ion-button size="large" type="submit" fill="outline"
+            >Register</ion-button
+          >
+        </div>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
